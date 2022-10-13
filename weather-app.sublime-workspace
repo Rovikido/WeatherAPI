@@ -1,0 +1,338 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"move",
+				"move_strategy"
+			],
+			[
+				"mo",
+				"move_strategy"
+			],
+			[
+				"get",
+				"get_all_moves"
+			],
+			[
+				"st",
+				"staticmethod"
+			],
+			[
+				"interio",
+				"interiorTemp"
+			],
+			[
+				"te",
+				"temperature_1"
+			],
+			[
+				"t",
+				"temperature"
+			],
+			[
+				"poly",
+				"poly_string"
+			],
+			[
+				"saf",
+				"safe_speed"
+			],
+			[
+				"sp",
+				"speed_limit"
+			],
+			[
+				"v",
+				"some_value"
+			],
+			[
+				"__",
+				"__value"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/C++/C Single File.sublime-build",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/C++/C Single File.sublime-build",
+					""
+				],
+				[
+					"Packages/C++/C Single File.sublime-build",
+					"Run"
+				]
+			],
+			[
+				"Packages/C++/C Single File.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/spirit/Projects/patterns/weather_app"
+	],
+	"file_history":
+	[
+		"/home/spirit/Projects/patterns/lab_1/employees.py",
+		"/home/spirit/Downloads/Telegram Desktop/piece.py",
+		"/home/spirit/Downloads/Telegram Desktop/utest_rook.py",
+		"/home/spirit/Downloads/Telegram Desktop/strategy.py",
+		"/home/spirit/Desktop/rook.py",
+		"/home/spirit/Projects/workshop_ucu/configs.py",
+		"/home/spirit/Projects/workshop_ucu/config.json",
+		"/home/spirit/Projects/AnoDEdge/prototype.ipynb",
+		"/media/spirit/627E-075E/UCU/workshop_ucu.ipynb",
+		"/home/spirit/Projects/AnoDEdge/config.json",
+		"/home/spirit/Projects/C/hello_world.c",
+		"/media/spirit/9EE4D00DE4CFE61D/PhD/AnoDEdge/prototype.ipynb",
+		"/home/spirit/Downloads/Telegram Desktop/lstm_generate_report.txt",
+		"/home/spirit/c.py",
+		"/home/spirit/task_1.py",
+		"/home/spirit/Downloads/Telegram Desktop/task_1.py",
+		"/home/spirit/Downloads/Telegram Desktop/main.py",
+		"/home/spirit/Downloads/Telegram Desktop/physical.py",
+		"/home/spirit/Downloads/Telegram Desktop/legal.py",
+		"/home/spirit/Downloads/Telegram Desktop/subscriber.py",
+		"/home/spirit/Downloads/Telegram Desktop/lab4.py",
+		"/home/spirit/Downloads/Telegram Desktop/lab3.py",
+		"/home/spirit/Downloads/Telegram Desktop/Number1.py",
+		"/home/spirit/Downloads/Telegram Desktop/abonent.py",
+		"/home/spirit/Downloads/Telegram Desktop/noise.py",
+		"/home/spirit/Projects/Subscriber/custom_polynomial.py",
+		"/home/spirit/Downloads/Telegram Desktop/Projet BDDA final.ipynb",
+		"/home/spirit/Downloads/Telegram Desktop/код(app.py).txt",
+		"/home/spirit/Desktop/microphon0.py",
+		"/home/spirit/Desktop/distance_sensor.py",
+		"/home/spirit/Desktop/microphon.py",
+		"/home/spirit/Downloads/Telegram Desktop/data.txt",
+		"/home/spirit/Downloads/Telegram Desktop/touchSensor.py",
+		"/home/spirit/Downloads/Telegram Desktop/dont_touch.py",
+		"/home/spirit/Downloads/Telegram Desktop/Сlassinheritance.py",
+		"/home/spirit/Downloads/Telegram Desktop/file.txt",
+		"/home/spirit/Desktop/user.py",
+		"/home/spirit/Downloads/Telegram Desktop/bank.py",
+		"/home/spirit/Downloads/Telegram Desktop/Lab_sensor.py",
+		"/home/spirit/Downloads/Telegram Desktop/BuzzSensor.py",
+		"/home/spirit/Downloads/Telegram Desktop/REST_extractor.py",
+		"/home/spirit/orientdb-gremlin/pom.xml",
+		"/home/spirit/Projects/rcs_ai/rcs_bert/ner.py",
+		"/home/spirit/Downloads/Telegram Desktop/NamedEntityRecognation (2).py",
+		"/home/spirit/Projects/es/app.py",
+		"/home/spirit/Downloads/Telegram Desktop/flask_elasticsearch_test.py",
+		"/home/spirit/.local/share/jupyter/runtime/nbserver-3543-open.html",
+		"/home/spirit/Desktop/ky-027.py",
+		"/home/spirit/Desktop/buzzer.py",
+		"/home/spirit/Downloads/Telegram Desktop/NamedEntityRecognation.py",
+		"/home/spirit/Desktop/test.py",
+		"/home/spirit/model_keras_ner/nodejs_brows/static/vocabs.js",
+		"/home/spirit/Downloads/Telegram Desktop/clauses_classifier.py",
+		"/home/spirit/model_keras_ner/vocab_words.json",
+		"/home/spirit/model_keras_ner/ner.py",
+		"/home/spirit/model_keras_ner/config.json",
+		"/home/spirit/model_keras_ner/spacy_ner.py",
+		"/home/spirit/Documents/cat.py",
+		"/home/spirit/Documents/factories.py",
+		"/home/spirit/model_keras_ner/nodejs_brows/static/predict.html",
+		"/home/spirit/model_keras_ner/nodejs_brows/static/predict.js",
+		"/home/spirit/model_keras_ner/model/tf_model/model.json",
+		"/home/spirit/model_keras_ner/model/tfjs_model/model.json",
+		"/home/spirit/model_keras_ner/nodejs_brows/static/tfjs_models/attention_glove_ner/model.json",
+		"/media/spirit/9EE4D00DE4CFE61D/EDU/Refit/building_readings.py",
+		"/media/spirit/9EE4D00DE4CFE61D/EDU/Refit/fcm.py",
+		"/media/spirit/9EE4D00DE4CFE61D/EDU/Refit/direct_correct.py",
+		"/media/spirit/9EE4D00DE4CFE61D/Workspace/Falcon/select_optimal_route.py",
+		"/media/spirit/9EE4D00DE4CFE61D/Workspace/Falcon/parser.py",
+		"/media/spirit/9EE4D00DE4CFE61D/Workspace/Falcon/load_maps.py",
+		"/media/spirit/9EE4D00DE4CFE61D/Workspace/Falcon/driver.py",
+		"/media/spirit/9EE4D00DE4CFE61D/Workspace/Falcon/demo1.py",
+		"/home/spirit/model_keras_ner/nodejs_brows/server.js",
+		"/home/spirit/model_keras_ner/vocab_tags.json",
+		"/media/spirit/627E-075E/model_keras_ner/nodejs_brows/server.js",
+		"/media/spirit/627E-075E/model_keras_ner/nodejs_brows/static/predict.js",
+		"/home/spirit/model_keras_ner/vocabs.js",
+		"/home/spirit/model_keras_ner/vocab.json_tags",
+		"/home/spirit/model_keras_ner/vocab.json_words",
+		"/home/spirit/model_keras_ner/vocab.json",
+		"/home/spirit/model_keras_ner/nodejs_model/static/predict.js",
+		"/home/spirit/model_keras_ner/nodejs_model/static/predict.html",
+		"/home/spirit/Downloads/Telegram Desktop/array.py",
+		"/home/spirit/Desktop/1.txt",
+		"/home/spirit/Desktop/fib.py"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"european",
+			"modelTopology",
+			"tags_vocab",
+			": 5,",
+			": 98,",
+			": 8,",
+			": 5,",
+			": 5",
+			": 5,",
+			"5,",
+			" 5,",
+			"5",
+			"European",
+			"Tags revi",
+			"Tags re"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"scrollbar_highlights": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"use_gitignore": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 108.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "weather-app.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 150.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
