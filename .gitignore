@@ -3,3 +3,5 @@
 venv/
 *.sublime-project
 .env
+.idea
+.__pycache__/
