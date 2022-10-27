@@ -1,0 +1,37 @@
+version: '3.8'
+
+services:
+  backend:
+    build: .
+    command: uvicorn backend.main:app --host 0.0.0.0
+    volumes:
+      - .:/app
+    ports:
+      - "127.0.0.1:8000:8000"
+    env_file:
+      - backend/.env
+    depends_on:
+      - mongodb
+    networks:
+      - backend
+
+  mongodb:
+    container_name: mongodb
+    image: mongo
+    restart: unless-stopped
+    command: mongod --auth
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodb_data:/data/db
+    env_file:
+      - backend/.env
+    networks:
+      - backend
+
+volumes:
+  mongodb_data:
+
+networks:
+  backend:
+    driver: bridge
