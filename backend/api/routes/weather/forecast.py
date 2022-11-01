@@ -8,6 +8,7 @@ forecast_router = APIRouter(include_in_schema=True)
 FORECAST_WEATHER_API_URL = "http://api.openweathermap.org/data/2.5/forecast"
 
 
+
 @forecast_router.get("/forecast/")
 async def get_weather_forecast(city: str, imperial=False):
     """Returns current weather info from OpenWeather's weather API.

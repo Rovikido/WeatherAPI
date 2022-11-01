@@ -1,5 +1,5 @@
 import httpx
-from fastapi import APIRouter, HTTPException
+from fastapi import APIRouter, HTTPException, Path
 from beanie import PydanticObjectId
 
 from backend.api.routes.utils import build_weather_query
@@ -17,7 +17,7 @@ async def get_weather_info(city: str, imperial=False):
 
     Args:
         city (str): Name of a city as collected by argparse
-        imperial (bool): Use or not imperial units for temperature
+        imperial (bool): Use or not imperial units for temperature (Make sure to type True or False with capital letter)
 
     Returns:
         weather_info (dict~json): current weather info in specified city.
