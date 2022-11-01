@@ -1,7 +1,7 @@
 """Holds building methods for displaying weather data and forecasts."""
 
 from abc import ABCMeta, abstractmethod
-from backend.api.routes.weather.current import get_weather_info
+from backend.api.routes.weather.current_util import get_weather_info
 import asyncio
 
 
@@ -45,13 +45,13 @@ class WeatherReportBuilder(metaclass=ABCMeta):
 class LightReportBuilder(WeatherReportBuilder):
     """Minimal report configuration"""
     def __init__(self):
+        self._city = ''
         self._res_report = {}
         self._initial_report = {}
         self.reset()
 
     def reset(self):
         """Prepares builder for next report"""
-        self._city = ''
         self._res_report.clear()
         self._initial_report.clear()
         self._res_report['city'] = ''
@@ -62,10 +62,10 @@ class LightReportBuilder(WeatherReportBuilder):
         self.reset()
         return res
 
-    async def set_city(self, city: str):
+    async def set_city(self, city: str, imperial=False):
         self._city = city
         self._res_report['city'] = city
-        report = await get_weather_info(city=city)
+        report = await get_weather_info(city=city, imperial=imperial)
         self._initial_report = report
 
     def add_coord(self):
@@ -110,10 +110,10 @@ class ExtendedReportBuilder(WeatherReportBuilder):
         self.reset()
         return res
 
-    async def set_city(self, city: str):
+    async def set_city(self, city: str, imperial=False):
         self._city = city
         self._res_report['city'] = city
-        report = await get_weather_info(city=city)
+        report = await get_weather_info(city=city, imperial=imperial)
         self._initial_report = report
 
     def add_coord(self):
@@ -159,10 +159,10 @@ class CompleteReportBuilder(WeatherReportBuilder):
         self.reset()
         return res
 
-    async def set_city(self, city: str):
+    async def set_city(self, city: str, imperial=False):
         self._city = city
         self._res_report['city'] = city
-        report = await get_weather_info(city=city)
+        report = await get_weather_info(city=city, imperial=imperial)
         self._initial_report = report
 
     def add_everything(self):
@@ -197,17 +197,18 @@ class ReportDirector:
     def __init__(self):
         self._builder = None
 
-    def set_builder(self, builder: WeatherReportBuilder):
-        self._builder = builder
+    def set_builder(self, builder):
+        self._builder = builder()
 
-    async def create_report(self, city: str):
+    async def create_report(self, city: str, imperial=False):
         """Used to initiate report creation
         Args:
+            imperial: use imperial unitc or not
             city (str): Name of the city for query search
         """
         if self._builder is None:
             raise ValueError("Builder does not exist")
-        await self._builder.set_city(city)
+        await self._builder.set_city(city, imperial)
 
         self._builder.add_everything()
         self._builder.add_coord()

@@ -1,13 +1,13 @@
 import pytest
 from asyncio import run
 
-from backend.api.routes.weather.current import get_weather_info
+from backend.api.routes.weather.current_util import get_weather_info
 from backend.src.weather_info.builder import ReportDirector, LightReportBuilder, ExtendedReportBuilder, CompleteReportBuilder
 
 
 def test_LightReportBuilder():
     director = ReportDirector()
-    director.set_builder(LightReportBuilder())
+    director.set_builder(LightReportBuilder)
     res_1 = run(director.create_report("Kyiv"))
     res_2 = run(get_weather_info("Kyiv"))
 
@@ -19,7 +19,7 @@ def test_LightReportBuilder():
 
 def test_ExtendedReportBuilder():
     director = ReportDirector()
-    director.set_builder(ExtendedReportBuilder())
+    director.set_builder(ExtendedReportBuilder)
     res_1 = run(director.create_report("Kyiv"))
     res_2 = run(get_weather_info("Kyiv"))
 
@@ -29,7 +29,7 @@ def test_ExtendedReportBuilder():
 
 def test_CompleteReportBuilder():
     director = ReportDirector()
-    director.set_builder(CompleteReportBuilder())
+    director.set_builder(CompleteReportBuilder)
     res_1 = run(director.create_report("Kyiv"))
     res_2 = run(get_weather_info("Kyiv"))
 

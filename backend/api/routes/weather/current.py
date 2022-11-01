@@ -4,28 +4,34 @@ from beanie import PydanticObjectId
 
 from backend.api.routes.utils import build_weather_query
 from backend.db.crud import *
-
+from backend.src.weather_info.builder import ReportDirector, LightReportBuilder, CompleteReportBuilder, \
+    ExtendedReportBuilder
 
 current_router = APIRouter(include_in_schema=True)
 
 CURRENT_WEATHER_API_URL = "http://api.openweathermap.org/data/2.5/weather"
 
+builder_list = {'light': LightReportBuilder, 'extended': ExtendedReportBuilder, 'complete': CompleteReportBuilder}
+
 
 @current_router.get("/current/")
-async def get_weather_info(city: str, imperial=False):
+async def get_compiled_weather_info(city: str, report_type: str = 'light', imperial: bool = False):
     """Returns current weather info from OpenWeather's weather API.
 
     Args:
         city (str): Name of a city as collected by argparse
+        report_type (str): One of the report types.  'light': for minimal information, 'extended' for more info, 'complete' for all available info
         imperial (bool): Use or not imperial units for temperature (Make sure to type True or False with capital letter)
 
     Returns:
         weather_info (dict~json): current weather info in specified city.
     """
-    url = build_weather_query(base_url=CURRENT_WEATHER_API_URL, city=city, imperial=imperial)
-    async with httpx.AsyncClient() as client:
-        response = await client.get(url)
-        weather_info = response.json()
+    report_type = report_type.lower()
+    if not report_type in builder_list:
+        raise HTTPException(400, "Invalid report type!")
+    director = ReportDirector()
+    director.set_builder(builder_list[report_type])
+    weather_info = await director.create_report(city, imperial)
     return weather_info
 
 
