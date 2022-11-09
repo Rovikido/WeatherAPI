@@ -1,8 +1,5 @@
-import httpx
-from fastapi import APIRouter, HTTPException, Path
-from beanie import PydanticObjectId
+from fastapi import APIRouter, HTTPException
 
-from backend.api.routes.utils import build_weather_query
 from backend.db.crud import *
 from backend.src.weather_info.builder import ReportDirector, LightReportBuilder, CompleteReportBuilder, \
     ExtendedReportBuilder

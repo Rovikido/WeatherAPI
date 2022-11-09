@@ -1,22 +1,11 @@
 """Current weather report model"""
 
-from typing import Tuple, Optional
 from datetime import datetime
+from typing import Tuple, Optional
+
 from beanie import Document, Indexed
 from pydantic import BaseModel, Field
 
-
-# class WeatherSchema(BaseModel):
-#     city: Optional[Indexed(str, unique=True)]
-#     coordinates: Optional[Tuple[float, float]]
-#     description: Optional[str] = Field(...)
-#     temperature: Optional[float] = Field(...)
-#     humidity: Optional[float]
-#     wind_speed: Optional[float]
-#     sky: Optional[str]
-#     time:  Optional[datetime]
-#     sunrise: Optional[datetime]
-#     sunset: Optional[datetime]
 
 class WeatherSchema(BaseModel):
     city: Indexed(str, unique=True)

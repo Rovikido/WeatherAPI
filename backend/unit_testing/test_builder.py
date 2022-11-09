@@ -1,8 +1,8 @@
-import pytest
 from asyncio import run
 
 from backend.api.routes.weather.current_util import get_weather_info
-from backend.src.weather_info.builder import ReportDirector, LightReportBuilder, ExtendedReportBuilder, CompleteReportBuilder
+from backend.src.weather_info.builder import ReportDirector, LightReportBuilder, ExtendedReportBuilder, \
+    CompleteReportBuilder
 
 
 def test_LightReportBuilder():
@@ -39,3 +39,4 @@ def test_CompleteReportBuilder():
     assert res_1['visibility'] == res_2['visibility']
     assert res_1['wind'] == res_2['wind']
     assert res_1['clouds'] == res_2['clouds']
+

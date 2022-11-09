@@ -1,7 +1,8 @@
+# This script is used only for testing
+
 import httpx
 
 from backend.api.routes.utils import build_weather_query
-
 
 CURRENT_WEATHER_API_URL = "http://api.openweathermap.org/data/2.5/weather"
 
